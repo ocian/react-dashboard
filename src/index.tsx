@@ -1,5 +1,4 @@
 import * as ReactDOM from 'react-dom'
+import Router from './router'
 
-const App = () => <div>app</div>
-
-ReactDOM.render(<App />, document.querySelector('#root'))
+ReactDOM.render(<Router />, document.querySelector('#root'))

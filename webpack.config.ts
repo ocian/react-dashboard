@@ -50,6 +50,7 @@ const compiler: (env, agrs) => webpack.Configuration = (env, args) => {
     mode: config.mode,
     stats: 'minimal',
     devtool: config.sourcemap,
+    devServer: { historyApiFallback: true },
     resolve: { extensions: ['.tsx', '.jsx', '.ts', '.js'] },
     entry: './src/index.tsx',
     output: {
