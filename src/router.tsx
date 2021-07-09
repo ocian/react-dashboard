@@ -1,7 +1,5 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import Loading from './components/loading'
-import loadable from '@loadable/component'
-// import { delayAsync } from './utils/time'
+import { views } from './views'
 
 interface RouteProp {
   path: string
@@ -12,26 +10,8 @@ interface RouteProp {
 }
 
 export const routes: RouteProp[] = [
-  {
-    path: '/',
-    exact: true,
-    component: loadable(
-      () => import(/* webpackPrefetch: true */ './views/home'),
-      // () =>
-      //   delayAsync({ delay: 1000 }).then(
-      //     () => import(/* webpackPrefetch: true */ './views/home')
-      //   ),
-      { fallback: <Loading /> }
-    ),
-    meta: { name: 'HOME' },
-  },
-  {
-    path: '/welcome',
-    component: loadable(
-      () => import(/* webpackPrefetch: true */ './views/welcome')
-    ),
-    meta: { name: 'Welcome' },
-  },
+  { path: '/', exact: true, component: views.home, meta: { name: 'HOME' } },
+  { path: '/welcome', component: views.welcome, meta: { name: 'Welcome' } },
 ]
 
 export default function Router() {

@@ -102,7 +102,7 @@ const compiler: (env, agrs) => webpack.Configuration = (env, args) => {
     optimization: {
       splitChunks: {
         chunks: 'all',
-        cacheGroups: { default: { filename: 'chunks/' + config.filename } },
+        cacheGroups: { default: { filename: 'vendor/' + config.filename } },
       },
       runtimeChunk: { name: 'runtime' },
       minimizer: [new ESBuildMinifyPlugin({ target: 'es2015', css: true })],
