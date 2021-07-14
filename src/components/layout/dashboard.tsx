@@ -9,9 +9,24 @@ interface DashboardProps {
 export function Dashboard(props: PropsWithChildren<DashboardProps>) {
   return (
     <Provider theme={defaultTheme}>
-      <Flex direction="column" gap="size-100">
-        <View backgroundColor="celery-600">{props.slotAside}</View>
-        <View backgroundColor="blue-600">{props.children}</View>
+      <Flex direction="row" gap="size-100" height="calc(100vh - size-100 - size-100)">
+        <View
+          width="size-2000"
+          height="100%"
+          overflow="auto"
+          paddingX="size-100"
+        >
+          {props.slotAside}
+        </View>
+        <View
+          backgroundColor="static-white"
+          width="calc(100% - size-2000)"
+          height="100%"
+          overflow="auto"
+          paddingX="size-100"
+        >
+          {props.children}
+        </View>
       </Flex>
     </Provider>
   )

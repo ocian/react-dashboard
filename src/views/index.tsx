@@ -26,4 +26,10 @@ export const views = {
         /* webpackPrefetch: true, webpackChunkName: 'page.form_demo' */ './form_demo'
       )
   ),
+  table_demo: loadable(
+    () =>
+      import(
+        /* webpackPrefetch: true, webpackChunkName: 'page.table_demo' */ './table_demo'
+      )
+  ),
 }

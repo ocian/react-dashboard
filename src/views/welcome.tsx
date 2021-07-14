@@ -1,7 +1,14 @@
-import { Button } from "@adobe/react-spectrum";
+import { Link, StatusLight } from '@adobe/react-spectrum'
 
 export default function ViewWelcome() {
-  return <div>
-    <Button variant="primary">hello</Button>
-  </div>
+  return (
+    <div>
+      <StatusLight variant="info">欢迎你，！</StatusLight>
+      <Link>
+        <a href="https://react-spectrum.adobe.com/react-spectrum/getting-started.html" target="_blank">
+          Adobe react-spectrum
+        </a>
+      </Link>
+    </div>
+  )
 }

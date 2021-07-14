@@ -3,6 +3,8 @@ lockfileVersion: 5.3
 specifiers:
   '@adobe/react-spectrum': ^3.11.2
   '@loadable/component': ^5.15.0
+  '@react-spectrum/combobox': ^3.0.0-rc.0
+  '@react-spectrum/table': ^3.0.0-beta.1
   '@types/loadable__component': ^5.13.4
   '@types/react': ^17.0.14
   '@types/react-dom': ^17.0.9
@@ -32,6 +34,8 @@ specifiers:
 dependencies:
   '@adobe/react-spectrum': 3.11.2_react-dom@17.0.2+react@17.0.2
   '@loadable/component': 5.15.0_react@17.0.2
+  '@react-spectrum/combobox': 3.0.0-rc.0_react-dom@17.0.2+react@17.0.2
+  '@react-spectrum/table': 3.0.0-beta.1_react-dom@17.0.2+react@17.0.2
   clsx: 1.1.1
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
@@ -265,6 +269,32 @@ packages:
       react: 17.0.2
     dev: false
 
+  /@react-aria/combobox/3.0.0-rc.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-X9vzZmhQnHZU2xgD8o9ScmyeR1GowvLmL4qJO9fgh4xAupOr0Dtx3d3XPylEKMGa0QU2gUZyzc1l7B05yYncOg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1
+    dependencies:
+      '@babel/runtime': 7.14.6
+      '@react-aria/i18n': 3.3.1_react@17.0.2
+      '@react-aria/interactions': 3.5.0_react@17.0.2
+      '@react-aria/listbox': 3.2.5_react@17.0.2
+      '@react-aria/live-announcer': 3.0.0_react-dom@17.0.2+react@17.0.2
+      '@react-aria/menu': 3.2.2_react-dom@17.0.2+react@17.0.2
+      '@react-aria/overlays': 3.7.0_react-dom@17.0.2+react@17.0.2
+      '@react-aria/selection': 3.5.0_react@17.0.2
+      '@react-aria/textfield': 3.3.0_react@17.0.2
+      '@react-aria/utils': 3.8.1_react@17.0.2
+      '@react-stately/collections': 3.3.2_react@17.0.2
+      '@react-stately/combobox': 3.0.0-rc.0_react@17.0.2
+      '@react-stately/layout': 3.3.1_react@17.0.2
+      '@react-types/button': 3.4.0_react@17.0.2
+      '@react-types/combobox': 3.0.0-rc.0_react@17.0.2
+      '@react-types/shared': 3.7.1_react@17.0.2
+      react: 17.0.2
+    transitivePeerDependencies:
+      - react-dom
+    dev: false
+
   /@react-aria/dialog/3.1.3_react@17.0.2:
     resolution: {integrity: sha512-qKqY4QX8D3ITSNTdqEcXsKrZHvBgjs567JzhUs6s9lBOCZ0Mc+SwhgwEOowFiaYWhEfNyuLZNltUgzUxOtBxzg==}
     peerDependencies:
@@ -289,6 +319,27 @@ packages:
       '@react-types/shared': 3.7.1_react@17.0.2
       clsx: 1.1.1
       react: 17.0.2
+    dev: false
+
+  /@react-aria/grid/3.0.0-beta.1_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-StahWcLsFX3yz5kfDrBWfYs8rkCRfmwVBw0UfZHliJ/1iPGhCEzdNaQzAGJhSTIO4PM8ZaLz5xW+qnxHjnDpCA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1
+    dependencies:
+      '@babel/runtime': 7.14.6
+      '@react-aria/focus': 3.4.0_react@17.0.2
+      '@react-aria/i18n': 3.3.1_react@17.0.2
+      '@react-aria/interactions': 3.5.0_react@17.0.2
+      '@react-aria/live-announcer': 3.0.0_react-dom@17.0.2+react@17.0.2
+      '@react-aria/selection': 3.5.0_react@17.0.2
+      '@react-aria/utils': 3.8.1_react@17.0.2
+      '@react-stately/grid': 3.0.0-beta.0_react@17.0.2
+      '@react-stately/virtualizer': 3.1.4_react@17.0.2
+      '@react-types/grid': 3.0.0-beta.0_react@17.0.2
+      '@react-types/shared': 3.7.1_react@17.0.2
+      react: 17.0.2
+    transitivePeerDependencies:
+      - react-dom
     dev: false
 
   /@react-aria/i18n/3.3.1_react@17.0.2:
@@ -596,6 +647,29 @@ packages:
       react: 17.0.2
     dev: false
 
+  /@react-aria/table/3.0.0-beta.1_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-+vInC0SXPPiOpiXjhU2s3xscqmzZeRc3dvAUWiez8HJQknTp/nu2kkKj4/+8do/SgMOGnqgUFoL3cwId5YgqeQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1
+    dependencies:
+      '@babel/runtime': 7.14.6
+      '@react-aria/focus': 3.4.0_react@17.0.2
+      '@react-aria/grid': 3.0.0-beta.1_react-dom@17.0.2+react@17.0.2
+      '@react-aria/i18n': 3.3.1_react@17.0.2
+      '@react-aria/interactions': 3.5.0_react@17.0.2
+      '@react-aria/selection': 3.5.0_react@17.0.2
+      '@react-aria/utils': 3.8.1_react@17.0.2
+      '@react-stately/table': 3.0.0-beta.1_react@17.0.2
+      '@react-stately/virtualizer': 3.1.4_react@17.0.2
+      '@react-types/checkbox': 3.2.2_react@17.0.2
+      '@react-types/grid': 3.0.0-beta.0_react@17.0.2
+      '@react-types/shared': 3.7.1_react@17.0.2
+      '@react-types/table': 3.0.0-beta.1_react@17.0.2
+      react: 17.0.2
+    transitivePeerDependencies:
+      - react-dom
+    dev: false
+
   /@react-aria/tabs/3.0.0_react@17.0.2:
     resolution: {integrity: sha512-sztoQEZF9dtQ/ir0W5AKg0B3GXsCASefeP2kCx+ebyO3bm1mcdvIdzT/seiW3rh2W+vfVfGsPyh1PVMXUbPKvw==}
     peerDependencies:
@@ -781,6 +855,28 @@ packages:
       - react-dom
     dev: false
 
+  /@react-spectrum/button/3.5.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-x0BXjqIvQ+VGzf1W3ojm+Z1NwNeyZyesL67LXxKMDuahpcssTlo0P3LoDfxk5jKuybBakLAZlTGipoWru4556Q==}
+    peerDependencies:
+      '@react-spectrum/provider': ^3.0.0-rc.1
+      react: ^16.8.0 || ^17.0.0-rc.1
+    dependencies:
+      '@babel/runtime': 7.14.6
+      '@react-aria/button': 3.3.2_react@17.0.2
+      '@react-aria/focus': 3.4.0_react@17.0.2
+      '@react-aria/interactions': 3.5.0_react@17.0.2
+      '@react-aria/utils': 3.8.1_react@17.0.2
+      '@react-spectrum/text': 3.1.2_react@17.0.2
+      '@react-spectrum/utils': 3.6.1_react@17.0.2
+      '@react-stately/toggle': 3.2.2_react@17.0.2
+      '@react-types/button': 3.4.0_react@17.0.2
+      '@react-types/shared': 3.7.1_react@17.0.2
+      '@spectrum-icons/ui': 3.2.0_react-dom@17.0.2+react@17.0.2
+      react: 17.0.2
+    transitivePeerDependencies:
+      - react-dom
+    dev: false
+
   /@react-spectrum/buttongroup/3.2.1_90a97eec455df860dfcc15c10403ff4d:
     resolution: {integrity: sha512-BIO5FB8bzXDisFtw0nusXZ3RfgPiuLADmFLhB6cuBfdntudfKIhBedeqIJy8uWK/2Ld2eM7WT6+pXi7L3fDgRw==}
     peerDependencies:
@@ -819,6 +915,65 @@ packages:
       '@react-types/checkbox': 3.2.2_react@17.0.2
       '@react-types/shared': 3.7.1_react@17.0.2
       '@spectrum-icons/ui': 3.2.0_90a97eec455df860dfcc15c10403ff4d
+      react: 17.0.2
+    transitivePeerDependencies:
+      - react-dom
+    dev: false
+
+  /@react-spectrum/checkbox/3.2.3_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-CMNkzwMPxYEh6bNPRBczjPkdEzTWdHD5eXVFckHGELgXyk83LsouiH6ohdi3lSn9kKrcwDOs5verSNX10scHgw==}
+    peerDependencies:
+      '@react-spectrum/provider': ^3.0.0-rc.1
+      react: ^16.8.0 || ^17.0.0-rc.1
+    dependencies:
+      '@babel/runtime': 7.14.6
+      '@react-aria/checkbox': 3.2.2_react@17.0.2
+      '@react-aria/focus': 3.4.0_react@17.0.2
+      '@react-aria/interactions': 3.5.0_react@17.0.2
+      '@react-spectrum/form': 3.2.2_react@17.0.2
+      '@react-spectrum/label': 3.3.3_react-dom@17.0.2+react@17.0.2
+      '@react-spectrum/utils': 3.6.1_react@17.0.2
+      '@react-stately/checkbox': 3.0.2_react@17.0.2
+      '@react-stately/toggle': 3.2.2_react@17.0.2
+      '@react-types/checkbox': 3.2.2_react@17.0.2
+      '@react-types/shared': 3.7.1_react@17.0.2
+      '@spectrum-icons/ui': 3.2.0_react-dom@17.0.2+react@17.0.2
+      react: 17.0.2
+    transitivePeerDependencies:
+      - react-dom
+    dev: false
+
+  /@react-spectrum/combobox/3.0.0-rc.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-+yZcw8SbRBHSqYQPjqoJZj5edjyWUoTVWH8fuJFZpczqi7hVQYfamMAqvxHWrtTENLhJSVLrTHCn7/4w2kfJpA==}
+    peerDependencies:
+      '@react-spectrum/provider': ^3.0.0-rc.1
+      react: ^16.8.0 || ^17.0.0-rc.1
+    dependencies:
+      '@babel/runtime': 7.14.6
+      '@react-aria/button': 3.3.2_react@17.0.2
+      '@react-aria/combobox': 3.0.0-rc.0_react-dom@17.0.2+react@17.0.2
+      '@react-aria/dialog': 3.1.3_react@17.0.2
+      '@react-aria/focus': 3.4.0_react@17.0.2
+      '@react-aria/i18n': 3.3.1_react@17.0.2
+      '@react-aria/interactions': 3.5.0_react@17.0.2
+      '@react-aria/label': 3.1.2_react@17.0.2
+      '@react-aria/overlays': 3.7.0_react-dom@17.0.2+react@17.0.2
+      '@react-aria/utils': 3.8.1_react@17.0.2
+      '@react-spectrum/button': 3.5.0_react-dom@17.0.2+react@17.0.2
+      '@react-spectrum/label': 3.3.3_react-dom@17.0.2+react@17.0.2
+      '@react-spectrum/listbox': 3.4.3_react-dom@17.0.2+react@17.0.2
+      '@react-spectrum/overlays': 3.4.3_react-dom@17.0.2+react@17.0.2
+      '@react-spectrum/progress': 3.1.2_react@17.0.2
+      '@react-spectrum/textfield': 3.1.6_react-dom@17.0.2+react@17.0.2
+      '@react-spectrum/utils': 3.6.1_react@17.0.2
+      '@react-stately/collections': 3.3.2_react@17.0.2
+      '@react-stately/combobox': 3.0.0-rc.0_react@17.0.2
+      '@react-types/button': 3.4.0_react@17.0.2
+      '@react-types/combobox': 3.0.0-rc.0_react@17.0.2
+      '@react-types/overlays': 3.5.0_react@17.0.2
+      '@react-types/shared': 3.7.1_react@17.0.2
+      '@react-types/textfield': 3.2.2_react@17.0.2
+      '@spectrum-icons/ui': 3.2.0_react-dom@17.0.2+react@17.0.2
       react: 17.0.2
     transitivePeerDependencies:
       - react-dom
@@ -885,6 +1040,20 @@ packages:
       react: 17.0.2
     dev: false
 
+  /@react-spectrum/form/3.2.2_react@17.0.2:
+    resolution: {integrity: sha512-V8zBqdXBfWhhJlTEmgISqO6OoHWTzZiMJOXibCi4dq7oN4Ri1dFqB1zi/4jKZth1JCh9DAjHYs5hWve+Y5tUqg==}
+    peerDependencies:
+      '@react-spectrum/provider': ^3.0.0-rc.1
+      react: ^16.8.0 || ^17.0.0-rc.1
+    dependencies:
+      '@babel/runtime': 7.14.6
+      '@react-aria/utils': 3.8.1_react@17.0.2
+      '@react-spectrum/utils': 3.6.1_react@17.0.2
+      '@react-types/form': 3.2.1_react@17.0.2
+      '@react-types/shared': 3.7.1_react@17.0.2
+      react: 17.0.2
+    dev: false
+
   /@react-spectrum/icon/3.3.1_6347de562164bef6449552611176d548:
     resolution: {integrity: sha512-U7eTqQfI7C1k/plnJSQM5NxOh2xnUzw3CKrGNBJQQFoEWLWtxGm2Aj9aOtqI4vQIX4JdBmZ83FItqf63xywm+g==}
     peerDependencies:
@@ -894,6 +1063,19 @@ packages:
       '@babel/runtime': 7.14.6
       '@react-aria/utils': 3.8.1_react@17.0.2
       '@react-spectrum/provider': 3.2.1_react-dom@17.0.2+react@17.0.2
+      '@react-spectrum/utils': 3.6.1_react@17.0.2
+      '@react-types/shared': 3.7.1_react@17.0.2
+      react: 17.0.2
+    dev: false
+
+  /@react-spectrum/icon/3.3.1_react@17.0.2:
+    resolution: {integrity: sha512-U7eTqQfI7C1k/plnJSQM5NxOh2xnUzw3CKrGNBJQQFoEWLWtxGm2Aj9aOtqI4vQIX4JdBmZ83FItqf63xywm+g==}
+    peerDependencies:
+      '@react-spectrum/provider': ^3.0.0-rc.1
+      react: ^16.8.0 || ^17.0.0-rc.1
+    dependencies:
+      '@babel/runtime': 7.14.6
+      '@react-aria/utils': 3.8.1_react@17.0.2
       '@react-spectrum/utils': 3.6.1_react@17.0.2
       '@react-types/shared': 3.7.1_react@17.0.2
       react: 17.0.2
@@ -945,6 +1127,25 @@ packages:
       '@react-types/label': 3.4.0_react@17.0.2
       '@react-types/shared': 3.7.1_react@17.0.2
       '@spectrum-icons/ui': 3.2.0_90a97eec455df860dfcc15c10403ff4d
+      react: 17.0.2
+    transitivePeerDependencies:
+      - react-dom
+    dev: false
+
+  /@react-spectrum/label/3.3.3_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-2vvYTtg0wrYAJtLMpuYTjvyBOr/GIFbVtQLDFqouloWz0lIevr0BA9emm7yvIS9n15mNnjt4XPAc12Cb7kOZNg==}
+    peerDependencies:
+      '@react-spectrum/provider': ^3.0.0-rc.1
+      react: ^16.8.0 || ^17.0.0-rc.1
+    dependencies:
+      '@babel/runtime': 7.14.6
+      '@react-aria/i18n': 3.3.1_react@17.0.2
+      '@react-aria/label': 3.1.2_react@17.0.2
+      '@react-aria/utils': 3.8.1_react@17.0.2
+      '@react-spectrum/utils': 3.6.1_react@17.0.2
+      '@react-types/label': 3.4.0_react@17.0.2
+      '@react-types/shared': 3.7.1_react@17.0.2
+      '@spectrum-icons/ui': 3.2.0_react-dom@17.0.2+react@17.0.2
       react: 17.0.2
     transitivePeerDependencies:
       - react-dom
@@ -1115,6 +1316,25 @@ packages:
       react-transition-group: 2.9.0_react-dom@17.0.2+react@17.0.2
     dev: false
 
+  /@react-spectrum/overlays/3.4.3_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-ry5nXBntOWiAS27EompJfY6ERLpivCu+rpqlr7bkrjvKsdrvnoIF2W6XewdESTdp5W3oU9nrSeuMDDMtzMamBA==}
+    peerDependencies:
+      '@react-spectrum/provider': ^3.0.0-rc.1
+      react: ^16.8.0 || ^17.0.0-rc.1
+      react-dom: ^16.8.0 || ^17.0.0-rc.1
+    dependencies:
+      '@babel/runtime': 7.14.6
+      '@react-aria/overlays': 3.7.0_react-dom@17.0.2+react@17.0.2
+      '@react-aria/utils': 3.8.1_react@17.0.2
+      '@react-spectrum/utils': 3.6.1_react@17.0.2
+      '@react-stately/overlays': 3.1.2_react@17.0.2
+      '@react-types/overlays': 3.5.0_react@17.0.2
+      '@react-types/shared': 3.7.1_react@17.0.2
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+      react-transition-group: 2.9.0_react-dom@17.0.2+react@17.0.2
+    dev: false
+
   /@react-spectrum/picker/3.2.4_react-dom@17.0.2+react@17.0.2:
     resolution: {integrity: sha512-vKk+UY2q7RlQCucd0WsT908xSxqLvy6pcdNOfrHz1gXOypbJMZW9TDd2je2949GUSOPQPQLVNVsID8p3lSi+cQ==}
     peerDependencies:
@@ -1157,6 +1377,21 @@ packages:
       '@react-aria/progress': 3.1.2_react@17.0.2
       '@react-aria/utils': 3.8.1_react@17.0.2
       '@react-spectrum/provider': 3.2.1_react-dom@17.0.2+react@17.0.2
+      '@react-spectrum/utils': 3.6.1_react@17.0.2
+      '@react-types/progress': 3.1.1_react@17.0.2
+      '@react-types/shared': 3.7.1_react@17.0.2
+      react: 17.0.2
+    dev: false
+
+  /@react-spectrum/progress/3.1.2_react@17.0.2:
+    resolution: {integrity: sha512-+KiV8pHq1iQ1os/JXL7MjgByyT3yxjzOFvTACDDh1vHcfHJk4ao+Q3VlQNH2ZVuuy5gjUKZ+2z0fAaBqxWLwjA==}
+    peerDependencies:
+      '@react-spectrum/provider': ^3.0.0-rc.1
+      react: ^16.8.0 || ^17.0.0-rc.1
+    dependencies:
+      '@babel/runtime': 7.14.6
+      '@react-aria/progress': 3.1.2_react@17.0.2
+      '@react-aria/utils': 3.8.1_react@17.0.2
       '@react-spectrum/utils': 3.6.1_react@17.0.2
       '@react-types/progress': 3.1.1_react@17.0.2
       '@react-types/shared': 3.7.1_react@17.0.2
@@ -1282,6 +1517,39 @@ packages:
       - react-dom
     dev: false
 
+  /@react-spectrum/table/3.0.0-beta.1_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-FY9Q/k5+vM74lf9Epx/qebefA5PaGltGLkjXBxTsjjcyTMc3x58FxUOh4YV5T/gAnLPz0dsXRBDByLw9pscUZQ==}
+    peerDependencies:
+      '@react-spectrum/provider': ^3.0.0-rc.1
+      react: ^16.8.0 || ^17.0.0-rc.1
+    dependencies:
+      '@babel/runtime': 7.14.6
+      '@react-aria/focus': 3.4.0_react@17.0.2
+      '@react-aria/grid': 3.0.0-beta.1_react-dom@17.0.2+react@17.0.2
+      '@react-aria/i18n': 3.3.1_react@17.0.2
+      '@react-aria/interactions': 3.5.0_react@17.0.2
+      '@react-aria/table': 3.0.0-beta.1_react-dom@17.0.2+react@17.0.2
+      '@react-aria/utils': 3.8.1_react@17.0.2
+      '@react-aria/virtualizer': 3.3.3_react-dom@17.0.2+react@17.0.2
+      '@react-aria/visually-hidden': 3.2.2_react@17.0.2
+      '@react-spectrum/checkbox': 3.2.3_react-dom@17.0.2+react@17.0.2
+      '@react-spectrum/progress': 3.1.2_react@17.0.2
+      '@react-spectrum/tooltip': 3.1.3_react-dom@17.0.2+react@17.0.2
+      '@react-spectrum/utils': 3.6.1_react@17.0.2
+      '@react-stately/collections': 3.3.2_react@17.0.2
+      '@react-stately/grid': 3.0.0-beta.0_react@17.0.2
+      '@react-stately/layout': 3.3.1_react@17.0.2
+      '@react-stately/table': 3.0.0-beta.1_react@17.0.2
+      '@react-stately/virtualizer': 3.1.4_react@17.0.2
+      '@react-types/grid': 3.0.0-beta.0_react@17.0.2
+      '@react-types/shared': 3.7.1_react@17.0.2
+      '@react-types/table': 3.0.0-beta.1_react@17.0.2
+      '@spectrum-icons/ui': 3.2.0_react-dom@17.0.2+react@17.0.2
+      react: 17.0.2
+    transitivePeerDependencies:
+      - react-dom
+    dev: false
+
   /@react-spectrum/tabs/3.0.1_90a97eec455df860dfcc15c10403ff4d:
     resolution: {integrity: sha512-CuT0EBBoMz7vKTPK0tAm8BPfBCN//0n8R8+h8uaeIKfIXSS7BTBmwMkDFPeCcI64uhs9H3dlJ1pwDifNua/l2A==}
     peerDependencies:
@@ -1327,6 +1595,20 @@ packages:
       react: 17.0.2
     dev: false
 
+  /@react-spectrum/text/3.1.2_react@17.0.2:
+    resolution: {integrity: sha512-OXmdqaX/PXR6Zb7iOX3G9qTkfFDv/yykuu2Vd7CovcgvnMhUwnWsX/r8fnurXpoNVQxXf77lp847Oh7XURR4iw==}
+    peerDependencies:
+      '@react-spectrum/provider': ^3.0.0-rc.1
+      react: ^16.8.0 || ^17.0.0-rc.1
+    dependencies:
+      '@babel/runtime': 7.14.6
+      '@react-aria/utils': 3.8.1_react@17.0.2
+      '@react-spectrum/utils': 3.6.1_react@17.0.2
+      '@react-types/shared': 3.7.1_react@17.0.2
+      '@react-types/text': 3.1.2_react@17.0.2
+      react: 17.0.2
+    dev: false
+
   /@react-spectrum/textfield/3.1.6_90a97eec455df860dfcc15c10403ff4d:
     resolution: {integrity: sha512-4C+p4J0L5vCvAYOORCpnOBMWhgqR279x+3veW/iEI1oXBN9ph1/MVONeAAYgzu1501m/ANlD1s+duumQUPNsMQ==}
     peerDependencies:
@@ -1347,6 +1629,30 @@ packages:
       '@react-types/shared': 3.7.1_react@17.0.2
       '@react-types/textfield': 3.2.2_react@17.0.2
       '@spectrum-icons/ui': 3.2.0_90a97eec455df860dfcc15c10403ff4d
+      react: 17.0.2
+    transitivePeerDependencies:
+      - react-dom
+    dev: false
+
+  /@react-spectrum/textfield/3.1.6_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-4C+p4J0L5vCvAYOORCpnOBMWhgqR279x+3veW/iEI1oXBN9ph1/MVONeAAYgzu1501m/ANlD1s+duumQUPNsMQ==}
+    peerDependencies:
+      '@react-spectrum/provider': ^3.0.0-rc.1
+      react: ^16.8.0 || ^17.0.0-rc.1
+    dependencies:
+      '@babel/runtime': 7.14.6
+      '@react-aria/focus': 3.4.0_react@17.0.2
+      '@react-aria/i18n': 3.3.1_react@17.0.2
+      '@react-aria/interactions': 3.5.0_react@17.0.2
+      '@react-aria/textfield': 3.3.0_react@17.0.2
+      '@react-aria/utils': 3.8.1_react@17.0.2
+      '@react-spectrum/form': 3.2.2_react@17.0.2
+      '@react-spectrum/label': 3.3.3_react-dom@17.0.2+react@17.0.2
+      '@react-spectrum/utils': 3.6.1_react@17.0.2
+      '@react-stately/utils': 3.2.1_react@17.0.2
+      '@react-types/shared': 3.7.1_react@17.0.2
+      '@react-types/textfield': 3.2.2_react@17.0.2
+      '@spectrum-icons/ui': 3.2.0_react-dom@17.0.2+react@17.0.2
       react: 17.0.2
     transitivePeerDependencies:
       - react-dom
@@ -1400,6 +1706,31 @@ packages:
       '@react-types/shared': 3.7.1_react@17.0.2
       '@react-types/tooltip': 3.1.1_react@17.0.2
       '@spectrum-icons/ui': 3.2.0_90a97eec455df860dfcc15c10403ff4d
+      react: 17.0.2
+    transitivePeerDependencies:
+      - react-dom
+    dev: false
+
+  /@react-spectrum/tooltip/3.1.3_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-sUdHontJd8og0jB+aIoWHrhPphWjNLH2ETPdB2O7WLlvQCC+9R8ZNgChM96YdN5tNrDzlysS2/BAwtP01oQIZQ==}
+    peerDependencies:
+      '@react-spectrum/provider': ^3.0.0-rc.1
+      react: ^16.8.0 || ^17.0.0-rc.1
+    dependencies:
+      '@babel/runtime': 7.14.6
+      '@react-aria/focus': 3.4.0_react@17.0.2
+      '@react-aria/interactions': 3.5.0_react@17.0.2
+      '@react-aria/overlays': 3.7.0_react-dom@17.0.2+react@17.0.2
+      '@react-aria/tooltip': 3.1.2_react-dom@17.0.2+react@17.0.2
+      '@react-aria/utils': 3.8.1_react@17.0.2
+      '@react-spectrum/overlays': 3.4.3_react-dom@17.0.2+react@17.0.2
+      '@react-spectrum/utils': 3.6.1_react@17.0.2
+      '@react-stately/tooltip': 3.0.4_react@17.0.2
+      '@react-stately/utils': 3.2.1_react@17.0.2
+      '@react-types/overlays': 3.5.0_react@17.0.2
+      '@react-types/shared': 3.7.1_react@17.0.2
+      '@react-types/tooltip': 3.1.1_react@17.0.2
+      '@spectrum-icons/ui': 3.2.0_react-dom@17.0.2+react@17.0.2
       react: 17.0.2
     transitivePeerDependencies:
       - react-dom
@@ -1470,12 +1801,39 @@ packages:
       react: 17.0.2
     dev: false
 
+  /@react-stately/combobox/3.0.0-rc.0_react@17.0.2:
+    resolution: {integrity: sha512-Q0XnCE4T5wkutSGjwWaZkM+enfio24fXENJFULN3UQmSEp8lAlT26YmKRckDrNdR7G8HkYap6Ul2xnX/UGGEcw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1
+    dependencies:
+      '@babel/runtime': 7.14.6
+      '@react-stately/list': 3.2.3_react@17.0.2
+      '@react-stately/menu': 3.2.2_react@17.0.2
+      '@react-stately/select': 3.1.2_react@17.0.2
+      '@react-stately/utils': 3.2.1_react@17.0.2
+      '@react-types/combobox': 3.0.0-rc.0_react@17.0.2
+      '@react-types/shared': 3.7.1_react@17.0.2
+      react: 17.0.2
+    dev: false
+
   /@react-stately/data/3.4.0_react@17.0.2:
     resolution: {integrity: sha512-RIF2zD3xFU3KGd19M6/P8cbPjnGsZFSjodVzPj60zqK8ToiAarMqTMplc++c1KLoR+UMoJx4J489PORc2V0hMg==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0-rc.1
     dependencies:
       '@babel/runtime': 7.14.6
+      '@react-types/shared': 3.7.1_react@17.0.2
+      react: 17.0.2
+    dev: false
+
+  /@react-stately/grid/3.0.0-beta.0_react@17.0.2:
+    resolution: {integrity: sha512-mIKbPqnmEtVcOi/6/dpUsLlgDpYtRa1fVnYlsjIKjpYD3ZgfdU0Ix/qAge8he96dVcJKDBEvabOnnuNSElCyfA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1
+    dependencies:
+      '@babel/runtime': 7.14.6
+      '@react-stately/selection': 3.6.1_react@17.0.2
+      '@react-types/grid': 3.0.0-beta.0_react@17.0.2
       '@react-types/shared': 3.7.1_react@17.0.2
       react: 17.0.2
     dev: false
@@ -1607,6 +1965,20 @@ packages:
       react: 17.0.2
     dev: false
 
+  /@react-stately/table/3.0.0-beta.1_react@17.0.2:
+    resolution: {integrity: sha512-6vj4ocRDC0n1anf3sSlPC29T0uCFJe5n/GDUzDDnFFYe76HS78rHA2vPH4J1vzu13Sizk/Wi03BVvDoSqmgVOw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1
+    dependencies:
+      '@babel/runtime': 7.14.6
+      '@react-stately/collections': 3.3.2_react@17.0.2
+      '@react-stately/grid': 3.0.0-beta.0_react@17.0.2
+      '@react-types/grid': 3.0.0-beta.0_react@17.0.2
+      '@react-types/shared': 3.7.1_react@17.0.2
+      '@react-types/table': 3.0.0-beta.1_react@17.0.2
+      react: 17.0.2
+    dev: false
+
   /@react-stately/tabs/3.0.0_react@17.0.2:
     resolution: {integrity: sha512-Z2zWMLlaLrSbl71f6tNv9rTZ7DTtEVyydK8Sh3c4HOvKyfENlhNamp7ffFPrnsHfWUdp5knpvvaqMDTJKx+uiA==}
     peerDependencies:
@@ -1715,6 +2087,15 @@ packages:
 
   /@react-types/checkbox/3.2.2_react@17.0.2:
     resolution: {integrity: sha512-WAAqLdjf6GUWjsMN5NaFMFumOtGTq+3+48CpM0ah2L+qmhMdj1s4gvHDerhls6u4ovRK/7zhg7XK+qQwcYVqMg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1
+    dependencies:
+      '@react-types/shared': 3.7.1_react@17.0.2
+      react: 17.0.2
+    dev: false
+
+  /@react-types/combobox/3.0.0-rc.0_react@17.0.2:
+    resolution: {integrity: sha512-G8n97jEXfexEGm7KQBgE3bO/Fnkk70Gxi1u4b5GdnTac5cgjEeIw0+Ckeca4aQJJsxxs0p8GhVz+IFv3+NZibg==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0-rc.1
     dependencies:
@@ -2005,6 +2386,19 @@ packages:
     dependencies:
       '@adobe/react-spectrum-ui': 1.0.2_react-dom@17.0.2+react@17.0.2
       '@react-spectrum/icon': 3.3.1_6347de562164bef6449552611176d548
+      react: 17.0.2
+    transitivePeerDependencies:
+      - '@react-spectrum/provider'
+      - react-dom
+    dev: false
+
+  /@spectrum-icons/ui/3.2.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-ez0Eu+fQAuE3B1Om5Dj3V+5wHNrUtbQpb3+27d4QsUbsUs0f0vcdEGO5P1UpA/1nEl1XF9gPcMpLX4B+c8/eDQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1
+    dependencies:
+      '@adobe/react-spectrum-ui': 1.0.2_react-dom@17.0.2+react@17.0.2
+      '@react-spectrum/icon': 3.3.1_react@17.0.2
       react: 17.0.2
     transitivePeerDependencies:
       - '@react-spectrum/provider'
